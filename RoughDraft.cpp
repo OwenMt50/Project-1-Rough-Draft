@@ -36,5 +36,5 @@ int main() {
     answer3 = yards/furlong;
     cout<<"You have "<<answer3<<" furlong(s).""\n";
     
-    cout<<"If you were given a value of 0 that is because your input(s) were below the required amount stated for a unique measurement.";
+    cout<<"If you were given a value of 0 that is because one or more of your inputs were below the required amount stated for a unique measurement.";
 }

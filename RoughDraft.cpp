@@ -1,7 +1,7 @@
 //Created by Owen Martin
 //Date: 2/22
 
-//Description: Standard unit of measurement is selected (feet) and is converted into a unique/silly unit of measurement
+//Description: Standard unit of measurement is converted into a unique/silly unit of measurement via user input
 
 #include <iostream>
 
@@ -38,6 +38,5 @@ int main() {
     cin>>yards;
     answer3 = yards/furlong;
     cout<<"You have "<<answer3<<" furlong(s).""\n";
-    
     cout<<"If you were given a value of 0 that is because one or more of your inputs were below the required amount stated for a unique measurement.";
 }

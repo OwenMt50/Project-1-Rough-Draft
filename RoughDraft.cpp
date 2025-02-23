@@ -9,6 +9,7 @@ using namespace std;
 
 int main() {
 
+    //Feet to horse length
     int horselength = 8;
     int feethorse = 0;
     int answer1 = 0;
@@ -18,6 +19,7 @@ int main() {
     answer1 = feethorse/horselength;
     cout<<"You will approximately have "<<answer1<<" horse length(s).""\n";
 
+    //Feet to yards
     int yard = 3;
     int yardfeet = 0;
     int answer2 = 0;
@@ -27,6 +29,7 @@ int main() {
     answer2 = yardfeet/yard;
     cout<<"You have been given "<<answer2<<" yard(s) with your input of "<<yardfeet<<" feet.""\n";
 
+    //Yards to furlong
     int furlong = 220;
     int yards = 0;
     int answer3 = 0;

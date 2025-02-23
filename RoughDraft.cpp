@@ -1,47 +1,40 @@
 //Created by Owen Martin
 //Date: 2/22
 
-//Description: 3 unique measurements within the imperial system that are shown in feet from user input
+//Description: Standard unit of measurement is selected (feet) and is converted into a unique/silly unit of measurement
 
 #include <iostream>
 
 using namespace std;
 
-int main () {
-//Below this comment is a table of where the user input, and initial measurements lie before being calculated
-    int feet1 = 8;
-    int horselength = 0;
+int main() {
+
+    int horselength = 8;
+    int feethorse = 0;
     int answer1 = 0;
-    int feet2 = 3;
-    int yard1 = 0;
+
+    cout<<"One horse length is every eight feet. How much feet would you like to input? ";
+    cin>>feethorse;
+    answer1 = feethorse/horselength;
+    cout<<"You will approximately have "<<answer1<<" horse length(s).""\n";
+
+    int yard = 3;
+    int yardfeet = 0;
     int answer2 = 0;
-    int yard2 = 220;
-    int furlong = 0;
+
+    cout<<"A yard in the imperial measuring system is three feet. Please input the amount of feet you wish to use ";
+    cin>>yardfeet;
+    answer2 = yardfeet/yard;
+    cout<<"You have been given "<<answer2<<" yard(s) with your input of "<<yardfeet<<" feet.""\n";
+
+    int furlong = 220;
+    int yards = 0;
     int answer3 = 0;
-    int coolanswer = 0;
-    int extrafeet = 3;
-
-//User inputs the amount of horse lengths they want to be converted into feet
-    cout<<"How many horse lengths would you like to convert into feet?: ";
-    cin>>horselength;
-    answer1 = feet1*horselength;
-    cout<<"In "<<horselength<<" horse length(s) you will rougly have "<<answer1<<" feet.""\n";
-
-
-//This is converting yards into feet
-    cout<<"What is the amount of yards you would like to convert?: ";
-    cin>>yard1;
-    answer2 = feet2*yard1;
-    cout<<"You will exactly have "<<answer2<<" feet.""\n";
-
-
-//Converting furlongs into yards
-    cout<<"How many furlongs would you like to convert into yards?: ";
-    cin>>furlong;
-    answer3 = yard2*furlong;
-    cout<<"There are "<<answer3<<" yards in "<<furlong<<" furlongs.""\n";
-
-    //Added in an extra piece of code that converts the yards from furlongs into feet
-    coolanswer = extrafeet*answer3;
-    cout<<"In case you wanted to know. There are about "<<coolanswer<<" feet in "<<answer3<<" yards.";
+    
+    cout<<"A furlong measures about 220 yards. Input the amount of yards you wish to use. ";
+    cin>>yards;
+    answer3 = yards/furlong;
+    cout<<"You have "<<answer3<<" furlong(s).""\n";
+    
+    cout<<"If you were given a value of 0 that is because your input(s) were below the required amount stated for a unique measurement.";
 }
